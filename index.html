@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Device Redirect</title>
+    <script type="text/javascript">function redirect() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                // Redirect if the device is Android
+                window.location.href = 'http://google.com';
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                // Redirect if the device is iOS
+                window.location.href = 'http://leaveatraceapp.com';
+            }
+        }</script>
+</head>
+<body onload="redirect()">
+    <!-- Display a message or a loading spinner while redirecting -->
+    <p>Redirecting...</p>
+</body>
+</html>
