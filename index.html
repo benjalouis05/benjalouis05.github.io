@@ -7,9 +7,13 @@
 
             if (/android/i.test(userAgent)) {
                 // Redirect if the device is Android
-                window.location.href = 'http://google.com';
+
+                window.location.href = 'https://forms.gle/MXTdzaVXxHUqeZvm6';
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 // Redirect if the device is iOS
+                window.location.href = 'http://leaveatraceapp.com';
+            } else {
+                // Redirect for other devices (e.g., computers)
                 window.location.href = 'http://leaveatraceapp.com';
             }
         }</script>
